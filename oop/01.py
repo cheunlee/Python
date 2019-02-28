@@ -23,9 +23,17 @@ class PythonStudent():
 
         # 推荐在函数末尾使用return语句
         return None
+    def doHomeworks(self):
+        print("My name is {0}".format(__class__.name))
+        return None
 
 yueyue = PythonStudent()
+print(yueyue.__dict__)
 yueyue.name = "yueyue"
+yueyue.gender = "female"
 print(yueyue.name)
 print(yueyue.age)
+print(yueyue.gender)
 yueyue.doHomework()
+print(yueyue.__dict__)
+yueyue.doHomeworks()
